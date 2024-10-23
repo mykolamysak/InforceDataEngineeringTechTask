@@ -60,7 +60,7 @@ def execute_query_from_file(file_path, db_config):
 
 
 def list_and_select_query(folder_path):
-    """Outputs list of queries"""
+    """Outputs list of sql"""
     while True:
         # Get list
         sql_files = [f for f in os.listdir(folder_path) if f.endswith(".sql")]
@@ -86,7 +86,7 @@ def list_and_select_query(folder_path):
 
 
 if __name__ == "__main__":
-    folder_path = 'queries'  # Queries folder
+    folder_path = '../sql'  # Queries folder
     db_config = read_db_config()
 
     # Infinity loop menu
