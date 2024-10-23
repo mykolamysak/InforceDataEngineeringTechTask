@@ -2,11 +2,17 @@ import csv
 import faker  # generates names, emails, etc
 import pandas as pd
 import random
+import os
 
 fake = faker.Faker()
 
 NUM_RECORDS = 1001
-FILENAME = 'user_data.csv'
+DIRECTORY = 'data'
+FILENAME = f'{DIRECTORY}/user_data.csv'
+
+# Create folder
+if not os.path.exists(DIRECTORY):
+    os.makedirs(DIRECTORY)
 
 # Email domains
 custom_domains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'ukr.net', 'mailbox.org', 'example.io']
