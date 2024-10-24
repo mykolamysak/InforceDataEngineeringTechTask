@@ -40,9 +40,11 @@ InforceDataEngineeringTechTask/
 │   └── DropTable.sql
 │
 ├── src/
-│   ├── constants.py
+│   ├── data_processing.py
 │   ├── file_handler.py
 │   ├── main.py
+│   ├── paths.py
+│   ├── settings.py
 │   └── sql_handler.py
 │
 ├── .dockerignore
@@ -51,7 +53,7 @@ InforceDataEngineeringTechTask/
 ├── LICENSE
 ├── README.Docker.md
 ├── README.md
-├── config.ini
+├── config.env
 ├── docker-compose.yml
 └── requirements.txt
 ```
