@@ -25,11 +25,9 @@ This project implements an ETL (Extract, Transform, Load) pipeline that processe
 ## Project Structure
 ```
 InforceDataEngineeringTechTask/
-│
-├── src/
-│   ├── data_extraction.py
-│   ├── main.py
-│   └── queries_handler.py
+├── data/
+│   ├── updated_user_data.csv
+│   └── user_data.csv
 │
 ├── sql/
 │   ├── 1_CountUsersSignedUpEachDay.sql
@@ -38,12 +36,15 @@ InforceDataEngineeringTechTask/
 │   ├── 4_MostCommonEmailDomain.sql
 │   └── 5_DeleteWhereDomain.sql
 │
-├── data/
-│   ├── updated_user_data.csv
-│   └── user_data.csv
+├── src/
+│   ├── constants.py
+│   ├── file_handler.py
+│   ├── main.py
+│   └── sql_handler.py
+│
 ├── .dockerignore
 ├── .gitignore
-├── compose.yml
+├── docker-compose.yml
 ├── Dockerfile
 ├── config.ini
 ├── LICENSE
