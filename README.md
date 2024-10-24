@@ -34,7 +34,10 @@ InforceDataEngineeringTechTask/
 │   ├── 2_UniqueEmailDomains.sql
 │   ├── 3_SignedUpLast7Days.sql
 │   ├── 4_MostCommonEmailDomain.sql
-│   └── 5_DeleteWhereDomain.sql
+│   ├── 5_DeleteWhereDomain.sql
+│   ├── CopyFromCSV.sql
+│   ├── CreateTable.sql
+│   └── DropTable.sql
 │
 ├── src/
 │   ├── constants.py
@@ -44,12 +47,13 @@ InforceDataEngineeringTechTask/
 │
 ├── .dockerignore
 ├── .gitignore
-├── docker-compose.yml
 ├── Dockerfile
-├── config.ini
 ├── LICENSE
-├── requirements.txt
-└── README.md
+├── README.Docker.md
+├── README.md
+├── config.ini
+├── docker-compose.yml
+└── requirements.txt
 ```
 
 ## Database Schema
